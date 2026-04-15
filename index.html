@@ -13,17 +13,22 @@
     </header>
 
     <section class="instructions-panel">
-        <h3>Fokus: Pravilan Ugao Bočnih Strana</h3>
+        <h3>Fokus: Pravilan Ugao Bočnih Strana (Idealno 45°)</h3>
         <ul>
             <li>1. Pozicioniraj turpiju na ivicu nokta.</li>
-            <li>2. Koristi <strong>Točkić Miša (Scroll)</strong> za rotaciju.</li>
-            <li>3. Drži <strong>Levi Klik</strong> i prevuci da proveriš tehniku.</li>
+            <li>2. Koristi <strong>Scroll</strong> za rotaciju na tačno 45°.</li>
+            <li>3. Drži <strong>Levi Klik</strong> i prevuci za turpijanje.</li>
         </ul>
     </section>
 
     <main>
         <div id="app-container">
-            <img id="nail-ref" src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1200&auto=format&fit=crop" alt="Nokat">
+            <img id="nail-ref" src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1200&auto=format&fit=crop" crossorigin="anonymous" alt="Nokat">
+            
+            <canvas id="hidden-mask-canvas" style="display:none;"></canvas>
+            
+            <canvas id="filing-canvas"></canvas>
+            
             <img id="nail-file" src="https://www.pngall.com/wp-content/uploads/13/Nail-File-PNG-Image.png" alt="Turpija">
             
             <div id="feedback">Čekam tvoj potez...</div>
