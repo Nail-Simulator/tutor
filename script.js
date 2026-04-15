@@ -6,7 +6,6 @@ const angleValue = document.getElementById('angle-value');
 let rotation = 0;
 let isFiling = false;
 
-// Pomeranje turpije
 container.addEventListener('mousemove', (e) => {
     const rect = container.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -20,13 +19,11 @@ container.addEventListener('mousemove', (e) => {
     }
 });
 
-// Rotacija točkićem + Prikaz ugla u realnom vremenu
 container.addEventListener('wheel', (e) => {
     e.preventDefault();
     rotation += e.deltaY * 0.1;
     nailFile.style.transform = `rotate(${rotation}deg)`;
     
-    // Prikazujemo apsolutni ugao 0-180 za korisnika
     let displayAngle = Math.abs(Math.round(rotation % 180));
     angleValue.textContent = displayAngle;
 });
