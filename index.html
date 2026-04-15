@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nail Logic PRO | Simulator Arhitekture</title>
+    <title>Nail Logic PRO | Simulator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">NAIL LOGIC <span class="pro">PRO</span></div>
-        <nav>
-            <span>Trening Centar v2.0</span>
-        </nav>
+        <div id="live-angle">UGAO: <span id="angle-value">0</span>°</div>
     </header>
 
     <main>
-        <section class="instructions">
-            <h2>Fokus: Pravilan Ugao Bočnih Strana</h2>
-            <p>1. Pozicioniraj turpiju na ivicu nokta.<br>
-               2. Koristi <strong>Točkić Miša (Scroll)</strong> za rotaciju.<br>
-               3. Drži <strong>Levi Klik</strong> i prevuci da proveriš tehniku.</p>
-            <div id="feedback" class="idle">Sistemi spremni. Čekam tvoj potez...</div>
-        </section>
-
         <div id="app-container">
             <img id="nail-ref" src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1200&auto=format&fit=crop" alt="Nokat">
-            
             <img id="nail-file" src="https://www.pngall.com/wp-content/uploads/13/Nail-File-PNG-Image.png" alt="Turpija">
+            
+            <div id="feedback">Čekam tvoj potez...</div>
+        </div>
+
+        <div class="scroll-instruction">
+            <span>SCROLL ZA ROTACIJU</span>
+            <div class="arrows">
+                <span class="arrow">↓</span>
+                <span class="arrow">→</span>
+            </div>
         </div>
     </main>
 
